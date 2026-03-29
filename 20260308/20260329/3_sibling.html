@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*兄弟選擇器*/
+        h1 + p {
+            color: red;
+        }       
+        h1 ~ p {
+            color: blue;
+        }
+        ul li {
+            color: red;
+        }
+        ul li~li {
+            color: blue;
+        }   
+            h2 ~ h3 {
+                color: green;
+            }
+            h2 + h3 {
+                background-color:  purple;
+            }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>項目一</li>
+        <li>項目二</li>
+        <li>項目三</li>
+    </ul>
+    <div>
+        <h1>標題</h1>       
+        <h2>副標題</h2>
+        <div>div1   </div>
+        <div>div2 </div>
+        <h3>次標題</h3>
+        <h2> h4   </h2>
+        <h3>次標題2</h3>
+       
+    </div>
+</body>
+</html>

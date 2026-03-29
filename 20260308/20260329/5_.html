@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*偽類選擇器*/
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: purple;
+        }
+
+        button:disabled {
+            background-color: gray;
+            color: white;
+        }
+
+        button:not(:disabled) {
+            background-color: green;
+            color: white;
+        }
+
+        button[disabled] {
+            background-color: gray;
+            color: white;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-child(2) {
+            color: green;
+        }
+
+        li:nth-child(2n+3) {
+            background-color: purple;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        section p:first-child {
+            color: red;
+        }
+
+        section p:last-child {
+            color: blue;
+        }
+
+        section p:nth-child(2) {
+            color: green;
+        }
+
+        section p:nth-child(2n+3) {
+            background-color: purple;
+            color: white;
+        }
+
+        section h1:not(.blk) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Section Title</h1>
+        <h1 class="blk">Section class blk Title</h1>
+        <p>段落1</p>
+        <p>段落2</p>
+        <p>段落3</p>
+        <p>段落4</p>
+    </section>
+    <table>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+        <tr>
+            <td>國文</td>
+            <td>英文</td>
+            <td>數學</td>
+            <td>體育</td>
+            <td>音樂</td>
+        </tr>
+    </table>
+    <ul>
+        <li>項目1</li>
+        <li>項目2</li>
+        <li>項目3</li>
+        <li>項目4</li>
+        <li>項目5</li>
+    </ul>
+    <button disabled>禁用按鈕</button>
+    <button>啟用按鈕</button>
+    <button>啟用按鈕</button>
+    <a href="http://www.google.com">gloogle</a>
+    <a href="http://www.example.com">Example</a>
+    <a href="http://www.momo.com">Momo</a>
+
+
+</body>
+
+</html>

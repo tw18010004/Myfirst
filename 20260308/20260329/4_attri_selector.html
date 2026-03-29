@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*屬性選擇器*/
+        input[type="text"] {
+            color: red;
+        }
+
+        input[type="password"] {
+            color: blue;
+        }
+
+        a {
+            color: green;
+
+        }
+
+        a[target="_blank"] {
+            color: purple;
+        }
+
+        a[target="_self"] {
+            color: orange;
+        }
+
+        a[http^="http"] {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="請輸入文字">
+    <input type="password" placeholder="請輸入密碼">
+
+    <a href="https://www.example.com">1這是一個連結</a>
+    <a href="https://www.example.com" target="_blank">2這是一個新視窗連結</a>
+    <a href="https://www.example.com" target="_self">3這是一個同視窗連結</a>
+    <a href="./ohtml">這是一個HTTP連結</a>
+
+
+</body>
+
+</html>

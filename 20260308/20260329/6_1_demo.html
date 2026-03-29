@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            color: red;
+        }
+
+        .child {
+            color: inherit;
+        }
+
+        div .child {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent" style="color: #27ae60;">jason test
+        <p class="child">這段文字是什麼顏色？</p>
+    </div>
+</body>
+
+</html>

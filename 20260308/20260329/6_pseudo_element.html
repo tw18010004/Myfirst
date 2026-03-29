@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*偽元素選擇器*/
+        div::before,
+        span::before {
+            content: 'AAA';
+            color: red;
+        }
+
+        div::after {
+            content: "BBB";
+            color: blue;
+        }
+
+        body {
+            color: white;
+
+            h1 {
+                color: initial;
+            }
+        }
+
+        /* 可能你使用套件帶CSS很強烈的分數很高雄*/
+        body>h2#loki.loki_class.hot {
+            color: red;
+        }
+
+        /* 這裡你要使用套件自帶CSS*/
+        .hot {
+            color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="loki" class="loki_class hot">這行是套件自動生成,不在你的專案</h2>
+
+
+    <h1> kdkdkdkk </h1>
+    <div>(創建一個inline:假元素)Lorem<span>123456</span>> ipsum dolor sit amet consectetur adipisicing elit. Dolorum unde alias
+        facilis magnam hic reiciendis
+        dignissimos enim aperiam odit, eveniet officiis distinctio fuga, autem quos, dolore eius? Beatae, laborum
+        impedit.</div>
+</body>
+
+</html>
