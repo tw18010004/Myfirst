@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 連結的四種基本狀態（順序很重要！） */
+        a:link {
+            color: red;
+            /* 未訪問的連結 */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+            /* 已訪問的連結 */
+        }
+
+        a:hover {
+            color: #0056b3;
+            /* 滑鼠懸停時 */
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:active {
+            color: #003d82;
+            background-color: purple;
+            /* 點擊瞬間 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="https://www.example.com" target="_blank">訪問 Example 網站</a>
+
+</body>
+
+</html>
