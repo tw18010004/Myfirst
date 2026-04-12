@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table td {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        /* 
+        url("https://picsum.photos/50/50/?random=10")
+        url("https://picsum.photos/200/50/?random=10")
+        url("https://picsum.photos/200/100/?random=10")
+        */
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-image: url("https://picsum.photos/50/50/?random=10");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100%;
+        }
+        .c {
+            background-image: url("https://picsum.photos/50/50/?random=10");
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+
+        .e {
+            background-image: url("https://picsum.photos/50/50/?random=10");
+            background-repeat: repeat-x;
+            background-position: let;
+        }
+
+        .d {
+            background-image: url("https://picsum.photos/50/50/?random=10");
+            background-repeat: repeat-y;
+            background-position: left top;
+        }
+
+        .f {
+            background-image: url("https://picsum.photos/50/50/?random=10");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-color: #ffffaa;
+        }
+        .g {
+            background:
+                url("https://picsum.photos/200/50/?random=10") no-repeat top,
+                url("https://picsum.photos/200/100/?random=10") no-repeat center,
+                url("https://picsum.photos/200/50/?random=10") no-repeat bottom;
+        }
+        .i {
+            background-image: radial-gradient(circle, black, white);
+        }
+        .h {
+            background-image: linear-gradient(to right, black, blue);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="a"></td>
+            <td class="b"></td>
+            <td class="c"></td>
+        </tr>
+        <tr>
+            <td class="d"></td>
+            <td class="e"></td>
+            <td class="f"></td>
+        </tr>
+        <tr>
+            <td class="g"></td>
+            <td class="h"></td>
+            <td class="i"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

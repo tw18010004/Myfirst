@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nested-list {
+            line-height: 1.6;
+
+        }
+
+        .nested-list>li {
+            margin-bottom: 8px;
+            color: green;
+        }
+
+        .nested-list ul {
+            margin-top: 8px;
+            list-style-type: circle;
+            color: blue;
+        }
+
+        .nested-list ul ul {
+            list-style-type: square;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nested-list">
+        <li>前端技術
+            <ul>
+                <li>HTML
+                    <ul>
+                        <li>語意化標籤</li>
+                        <li>表單設計</li>
+                    </ul>
+                </li>
+                <li>CSS
+                    <ul>
+                        <li>選擇器</li>
+                        <li>佈局技巧</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>後端技術
+            <ul>
+                <li>Node.js</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
