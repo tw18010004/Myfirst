@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 800px;
+            width: auto;
+            border: 1px solid black;
+
+            img {
+                float: right;
+                margin: 0 20px 20px;
+            }
+
+            span {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                float: left;
+                margin: 0 20px 20px;
+            }
+        }
+
+        .clearRight {
+            clear: right;
+        }
+
+        .clearBoth {
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <h2>容量有所不太微笑考 生畢竟成人由於定義治
+        </h2>
+      <span>aaaaa</span>
+            <img src="https://picsum.photos/300/200/?random=10">
+       <!-- <div class="clearBoth">sss </div> -->
+    </div>
+    <hr>
+    <div class="container">
+        <h2>容量有所不太微笑考 生畢竟成人由於定義治
+        </h2>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+        <p class="clearRight">Loremipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit
+            possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>容量有所不太微笑考 <span>kdkkdkdkdkd
+            </span>生畢竟成人由於定義治療發表是的，一會兒那就，共有設置故障相關圖片演唱會程式告訴你此時按照本站網上，基本上無聊相冊一流，興趣招聘正式精靈平時不限輸出方便集團醫藥也是哥哥自我警察，傳輸是因為目的可愛不見幹什麼，主要好處精英，關西無人，始終轉。
+        </h2>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+        <p>Lorem <span>kdkkdkdkdkd </span>ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit
+            possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit sit possimus, quia animi id voluptate
+            officia iste voluptas non suscipit itaque qui dolorem aspernatur, modi exercitationem magni repellat odio?
+        </p>
+    </div>
+</body>
+
+</html>
