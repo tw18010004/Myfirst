@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            /* transform: translateX(50px) translateY(50px); */
+            /* transform: translate(50px, 50px); */
+            /* transform: translateX(50px) translateY(50px) scale(1.5); */
+            /* transform: translate(50px, 50px) scale(1.5); */
+            /* transform: translate(50px, 50px) rotate(45deg); */
+            /* transform: translate(50px, 50px) rotateX(45deg); */
+            /* transform: translate(50px, 50px) rotateY(45deg); */
+            /* transform: translate(50px, 50px) rotateZ(45deg); */
+            /* transform: translate(50px, 50px) skewX(20deg); */
+            /* transform: translate(50px, 50px) skewY(20deg); */
+            /* transform: translate(50px, 50px) skew(20deg, 20deg); */
+
+        }
+
+        .trans {
+            background: lightcoral;
+            /* 一個參數代表 translateX(50px) */
+            /* transform: translate(50px); */
+            /* transform: translate(50px, 50px); */
+            /* transform: translateX(100px); */
+            /* transform: translateX(100px) translateY(50px); */
+            /* transform: scale(1.5); */
+            /* transform: scale(-1); /* 水平翻轉 */
+            /* transform: scaleX(-1) scaleY(-1); */
+            /* transform: rotate(45deg); */
+            transform: skew(0deg);
+            transform-origin: left bottom;
+        }
+
+        .origin {
+            background: lightgreen;
+            transform: translate(50px, 50px) rotate(45deg);
+            transform-origin: left bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box trans">到達緊緊英文，</div>
+    <div class="box">到達緊緊英文，</div>
+    <button class="origin">click me</button>
+</body>
+
+</html>

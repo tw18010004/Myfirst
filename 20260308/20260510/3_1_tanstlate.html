@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            gap: 10px;
+
+            &:hover .loki,
+            &.active .loki {
+                background-color: lightgreen;
+                left: 1000px;
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            /* transition: all 5s ease; */
+            /* transition-duration: 6s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+            transition-property: all; */
+            transition: width 1s ease, background-color 3s ease;
+
+
+
+            &:hover {
+                background-color: lightcoral;
+                width: 300px;
+            }
+
+            &.effect {
+                transition: width 2s 1s ease, background-color 1s 0s ease;
+                background-color: lightcoral;
+                width: 400px;
+            }
+
+            &.loki {
+                position: relative;
+                left: 0;
+                /* transition-timing-function: ease; */
+                transition: all 5s ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box effect">到達緊緊</div>
+    <div class="box loki">到達緊緊</div>
+</body>
+
+</html>

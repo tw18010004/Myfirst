@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            min-width: 0;
+            padding: 1rem;
+        }
+
+        .left {
+            background: #fbc531;
+        }
+
+        .right {
+            background: #4e91f9;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">左邊內容</div>
+        <div class="right">右邊內容</div>
+    </div>
+
+</body>
+
+</html>

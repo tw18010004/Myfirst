@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #333;
+            margin: 0;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+/********************** animation 1 **********************/
+        div.base {
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* 動畫名稱 */
+            /* animation-name: demo1; */
+            /* 動畫間隔 */
+            /* animation-duration: 1s; */
+            /* 速度函式 */
+            /* animation-timing-function: ease; */
+            /* 動畫延遲 */
+            /* animation-delay: 0.1s; */
+            /* 播放次數 */
+            /* animation-iteration-count: 3; */
+            /* 循環交替或反向播放*/
+            /* animation-direction: alternate; */
+            /*播放基數次時可考慮是否要停留於尾格，否則會還原到初始格狀態*/
+            /* animation-fill-mode: forwards; */
+            /* 以上可縮寫成 */
+            animation: demo1 2s ease 0s 2 alternate forwards;
+        }
+
+        @keyframes demo1 {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+        /********************** animation 2 **********************/
+    </style>
+</head>
+
+<body>
+    <div class="base">HELLO WORLD</div>
+    <div class="base"><button type="reset"></button></div>
+</body>
+
+</html>
