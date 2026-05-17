@@ -1,0 +1,22 @@
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+
+#jasonSlider {
+
+     .carousel-item {   
+        padding-bottom: 240px; 
+
+        img {
+             filter: grayscale(50%) sepia(80%);
+        }    
+    }
+    
+    &>button>i
+    {    
+       width: 50px;
+         height: 50px;
+         line-height: 50px;     
+        };
+}
+
