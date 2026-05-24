@@ -42,6 +42,14 @@ body {
   background-blend-mode: darken;
 }
 
+#lokiPallet {  
+  background-blend-mode: lighten;
+}
+
+#lokiService { 
+  background-blend-mode: lighten;
+}
+
 @media screen and (min-width: 768px) {
   #lokiPallet {
     article {
